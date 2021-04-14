@@ -62,7 +62,7 @@ export class Block extends Entity {
 
   get parentHash(): string | null {
     let value = this.get("parentHash");
-    if (value === null || value.kind == ValueKind.NULL) {
+    if (value === null) {
       return null;
     } else {
       return value.toString();
@@ -79,7 +79,7 @@ export class Block extends Entity {
 
   get author(): string | null {
     let value = this.get("author");
-    if (value === null || value.kind == ValueKind.NULL) {
+    if (value === null) {
       return null;
     } else {
       return value.toString();
@@ -96,7 +96,7 @@ export class Block extends Entity {
 
   get difficulty(): BigInt | null {
     let value = this.get("difficulty");
-    if (value === null || value.kind == ValueKind.NULL) {
+    if (value === null) {
       return null;
     } else {
       return value.toBigInt();
@@ -113,7 +113,7 @@ export class Block extends Entity {
 
   get totalDifficulty(): BigInt | null {
     let value = this.get("totalDifficulty");
-    if (value === null || value.kind == ValueKind.NULL) {
+    if (value === null) {
       return null;
     } else {
       return value.toBigInt();
@@ -130,7 +130,7 @@ export class Block extends Entity {
 
   get gasUsed(): BigInt | null {
     let value = this.get("gasUsed");
-    if (value === null || value.kind == ValueKind.NULL) {
+    if (value === null) {
       return null;
     } else {
       return value.toBigInt();
@@ -147,7 +147,7 @@ export class Block extends Entity {
 
   get gasLimit(): BigInt | null {
     let value = this.get("gasLimit");
-    if (value === null || value.kind == ValueKind.NULL) {
+    if (value === null) {
       return null;
     } else {
       return value.toBigInt();
@@ -164,7 +164,7 @@ export class Block extends Entity {
 
   get receiptsRoot(): string | null {
     let value = this.get("receiptsRoot");
-    if (value === null || value.kind == ValueKind.NULL) {
+    if (value === null) {
       return null;
     } else {
       return value.toString();
@@ -181,7 +181,7 @@ export class Block extends Entity {
 
   get transactionsRoot(): string | null {
     let value = this.get("transactionsRoot");
-    if (value === null || value.kind == ValueKind.NULL) {
+    if (value === null) {
       return null;
     } else {
       return value.toString();
@@ -198,7 +198,7 @@ export class Block extends Entity {
 
   get stateRoot(): string | null {
     let value = this.get("stateRoot");
-    if (value === null || value.kind == ValueKind.NULL) {
+    if (value === null) {
       return null;
     } else {
       return value.toString();
@@ -215,7 +215,7 @@ export class Block extends Entity {
 
   get size(): BigInt | null {
     let value = this.get("size");
-    if (value === null || value.kind == ValueKind.NULL) {
+    if (value === null) {
       return null;
     } else {
       return value.toBigInt();
@@ -232,7 +232,7 @@ export class Block extends Entity {
 
   get unclesHash(): string | null {
     let value = this.get("unclesHash");
-    if (value === null || value.kind == ValueKind.NULL) {
+    if (value === null) {
       return null;
     } else {
       return value.toString();
